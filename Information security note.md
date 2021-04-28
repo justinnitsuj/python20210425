@@ -1,3 +1,83 @@
+# 20210425資安深耕營上課筆記
+## Python環境
+安裝Python：https://www.python.org/downloads/
+
+指令下載安裝：
+```python
+sudo apt install python3
+```
+
+## 使用Python
+在Python直譯器上打入
+```python
+python3
+```
+將程式寫成一個檔案 再使用Python
+```python
+python3 script.py
+```
+## 寫程式的開端
+```python
+print("Hello, World!")
+```
+簡單的語法
+```python
+x = 2                   //設x變數的數值為2
+
+if x == 2:              //判斷x變數的數值是否為2
+    print("x is 2.")    //成立的話輸出
+```
+縮排(indent)
+
+使用tab或空格鍵
+官方縮排為4個空格
+
+## 變數與型態
+變數命名不能是數字開頭及包含運算子
+```python
+a, b = 89, 21
+print(a,b)
+
+a, b = "ha", "lapo"
+print(a,b)
+```
+數字分為整數(int)及浮點數(float)
+```python
+mynumber = 7             //整數(int)型態
+print(mynumber)
+
+numberfloat = 7.0       //浮點數(float)型態
+print(numberfloat)
+
+numberfloat = float(7)  //將整數(int)轉為浮點數(float)
+print(numberfloat)
+```
+數字相關函數
+```python
+bin(4)                  //轉成二進位表示法
+oct(6)                  //轉成八進位表示法 
+hex(32)                 //轉成十六進位表示法
+int('9')                //將字串轉為數字
+int('9', 8)             //八進制
+```
+字串(string)就像是顯現出來的圖案
+```python
+istring = 'hello'       //字串外要加上''或""
+print(istring)
+```
+字串相關函式
+```python
+str(5599)               //可用來建立字串或將數值轉換成字串
+chr(0x64)               //可取得指定的ASCII字元碼的字元
+ord('o')                //在ASCII中的值
+len('hello')            //字串的長度
+```
+
+
+
+
+
+
 # 20210425資安深耕營解題筆記
 ## 第一堂base64編碼 - 20 pts
 ``` python
