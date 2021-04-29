@@ -96,8 +96,31 @@ print(ilist[2])
 for x in ilist:
     print(x)
 ```
+字典(dict)
 
+一個鍵(key)配上一個值(value)
+```python
+phonenumber = {}
+phonenumber["John"] = 938477566
+phonenumber["Jack"] = 938377264
+print(phonenumber)
 
+phonenumber = {"John" : 938477566,"Jack" : 938377264}
+for name, number in phonenumber.items():
+    print(f"Phone number of {name} is {number}")
+```
+集合(set)
+```python
+a = set(["1", "2", "3"])
+b = set(["2", "5"])
+
+print(a.intersection(b))                //使用交集
+print(a.union(b))                       //使用聯集
+print(a.difference(b))                  //使用差集
+print(a.symmetric_difference(b))
+```
+## 基本運算子
+算數運算子
 
 
 # 20210425資安深耕營解題筆記
