@@ -73,7 +73,29 @@ ord('o')                //在ASCII中的值
 len('hello')            //字串的長度
 ```
 
+字串與位元的轉換
+```python
+istring = "你好"
+print(istring)
+ibytes = istring.encode("utf8")         //將字串編碼
+print(ibytes)
+istring = ibytes.decode("utf8")         //將位元組解碼
+print(istring)
+```
+列表(list)
+```python
+ilist = []                             //建立一個空的列表
 
+ilist.append(1)                        //使用append增加列表中的元素
+ilist.append(2.8)                      //可在列表中增加的元素 除了整數 也可以使用浮點數及字串
+ilist.append("haha")
+
+print(ilist[0])                        //印出字串中的第一個元素
+print(ilist[1]) 
+print(ilist[2]) 
+for x in ilist:
+    print(x)
+```
 
 
 
