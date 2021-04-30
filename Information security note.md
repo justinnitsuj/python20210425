@@ -122,6 +122,92 @@ print(a.symmetric_difference(b))
 ## 基本運算子
 算數運算子
 
+加 +
+減 -
+乘 *
+除 / (浮點數除法)
+除 // (整數除法)
+取餘數 %
+冪次 **
+```python
+number = 1 + 2 * 3 / 4.0        //使用加號、乘號、除號進行運算
+print(number)
+
+remainder = 11 % 3              //取餘數
+print(remainder)
+
+squared = 7 ** 2                //取幾次方
+print(squared)
+```
+比較運算子
+
+大於 >
+小於 <
+等於 ==
+大於等於 >=
+小於等於 <=
+不等於 !=
+
+邏輯運算子
+
+且 and
+或 or
+異或 ^
+非 not
+
+字串運算子
+
+加 +
+乘 *
+```python
+helloworld = "hello" + " " + "world"
+print(helloworld)
+
+lotsofhellos = "woow" * 10
+print(lotsofhellos)
+```
+列表運算子
+
+加 +
+乘 *
+```python
+even_numbers = [2,4,6,8]
+odd_numbers = [1,3,5,7]
+all_numbers = odd_numbers + even_numbers        //輸出列表中的偶數及奇數
+print(all_numbers)
+
+print([1,2,3] * 3)
+```
+## 基本字串操作
+字串的長度使用len
+```python
+istring = "Hello hello!"
+print(len(istring))                             //輸出字串的長度
+```
+字串的位置使用index
+```python
+istring = "Hello world!"
+print(istring.index("o"))                       //尋找字串的位置
+```
+字串計數使用count
+```python
+istring = "Hello hello!"
+print(istring.count("l"))                       //計算l出現的次數
+```
+子字串的應用
+[start ; stop ; step]
+
+子字串包含start stop終點位置不包含 step為每一次的間隔
+
+```python
+istring = "Hello world!"
+
+print(istring[3:7])                             //取字串中index為3到6的元素 沒有設定step代表初始值為1
+print(istring[3:7:2])                           //取字串中index為3到6的元素 每兩個取一次
+print(istring[::-1])                            //從最後輸出
+```
+
+
 
 # 20210425資安深耕營解題筆記
 ## 第一堂base64編碼 - 20 pts
