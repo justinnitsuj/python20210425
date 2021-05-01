@@ -303,7 +303,7 @@ m_function()                                    //直接使用函式名稱加括
 x = sum_numbers(1,2)                            //使用一個變數來儲存答案
 ```
 ## 異常處理
-先跑到try判斷裡，若為異常則會跑到except
+先跑到try判斷裡 若為異常則會跑到except
 ```python
 try:
     print(好想下課)
