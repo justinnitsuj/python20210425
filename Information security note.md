@@ -155,6 +155,13 @@ print(squared)
 異或 ^
 非 not
 
+| A        | B           | A and B  | A or B        | A^B           | not A  |
+| -------- |:-------------:| -----:| ------------- |:-------------:| -----:|
+| True        | True      | True | True        | False      | False |
+|  True       | False      |   False |True        | True      |   False |
+| False      | True      |    False | True      | True      |    True |
+| False      | False      |    False | False      | False      |    True |
+
 字串運算子
 
 加 +
@@ -206,9 +213,103 @@ print(istring[3:7])                             //取字串中index為3到6的�
 print(istring[3:7:2])                           //取字串中index為3到6的元素 每兩個取一次
 print(istring[::-1])                            //從最後輸出
 ```
+## 字串大小寫轉換
+```python
+istring = "Hello world!"
+print(istring.upper())                          //upper換成大寫
+print(istring.lower())                          //lower換成小寫
+```
+## 字串前後墜的判斷
+```python
+istring = "Hello world!"
+print(istring.startswith("Hello"))              //使用startswith判斷前墜
+print(istring.endswith("asdfasdfasdf"))         //後墜判斷使用endswith
+```
+## 字串分割
+```python
+astring = "Hello world!"
+afewwords = astring.split(" ")                  //split字串分割 將Hello與world分開
+```
+## 條件判斷
+```python
+if 條件判斷式:
+    做某些事 
+    pass
+elif 另一個條件判斷式: 
+    做另一件事
+    pass
+else:
+    再做另外一件事
+    pass
+```
+## in運算子
+```python
+name = "John"
+if name in ["John", "Rick"]:                    //使用in判斷name中是否有尋找的元素
+    print("ye")
+```
+## is 運算子
+判斷是否有相同的例子
+```python
+x = [1,2,3]   
+y = [1,2,3]  
+print(x == y)                                   //x陣列的元素是否跟y陣列一樣     print True    
+print(x is y)                                   //x陣列是否等於y陣列            print False
+```
+## 迴圈
+相同的內容 不用一一輸入就能重複執行
+## for迴圈
+```python
+for x in range(5):                              //輸出0~4
+    print(x)
 
+for x in range(3, 6):                           //輸出3~5
+    print(x)
 
+for x in range(3, 8, 2):                        //輸出3、5、7
+    print(x)
+```
+## while迴圈
+```python
+count = 0
+while count < 5:
+    print(count)                                //輸出0~4
+    count += 1 
+```
+## break和continue語句
+```python
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break                                   //break輸出
+for x in range(10):
+    if x % 2 == 0:
+        continue                                //符合判斷式就continue
+    print(x)
+```
+## 函式
+```python
+def m_function():                               //定義一個輸出字串的函式
+    print("Hello From My Function!")
 
+def sum_numbers(a, b):                          //定義兩數相加的函式
+    return a + b
+```
+## 如何呼叫函式
+```python
+m_function()                                    //直接使用函式名稱加括號呼叫
+x = sum_numbers(1,2)                            //使用一個變數來儲存答案
+```
+## 異常處理
+先跑到try判斷裡，若為異常則會跑到except
+```python
+try:
+    print(好想下課)
+except:
+    print("error")
+```
 # 20210425資安深耕營解題筆記
 ## 第一堂base64編碼 - 20 pts
 ``` python
